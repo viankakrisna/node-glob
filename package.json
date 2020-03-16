@@ -12,9 +12,7 @@
   "module": "dist/glob.module.js",
   "unpkg": "dist/glob.umd.js",
   "files": [
-    "glob.js",
-    "sync.js",
-    "common.js"
+    "dist"
   ],
   "engines": {
     "node": "*"

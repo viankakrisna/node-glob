@@ -515,8 +515,7 @@ class Glob {
     // assume that everything in there exists, so we can avoid
     // having to stat it a second time.
     if (!this.mark && !this.stat) {
-      for (let i = 0; i < entries.length; i++) {
-        let e = entries[i];
+      for (let e of entries) {
         if (abs === "/") e = abs + e;
         else e = `${abs}/${e}`;
         this.cache[e] = true;

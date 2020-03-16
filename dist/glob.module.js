@@ -1,10 +1,8 @@
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var events = require('events');
-var fs = _interopDefault(require('fs'));
-var assert = _interopDefault(require('assert'));
-var path = _interopDefault(require('path'));
-var util = _interopDefault(require('util'));
+import { EventEmitter } from 'events';
+import fs from 'fs';
+import assert from 'assert';
+import path from 'path';
+import util from 'util';
 
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -2434,7 +2432,7 @@ glob.hasMagic = function (pattern, options_) {
 };
 
 glob.Glob = Glob;
-inherits(Glob, events.EventEmitter);
+inherits(Glob, EventEmitter);
 
 var Glob = function Glob(pattern, options, cb) {
   if (typeof options === "function") {
@@ -3002,5 +3000,5 @@ function readdirCb(self, abs, cb) {
   };
 }
 
-module.exports = glob;
-//# sourceMappingURL=glob.js.map
+export default glob;
+//# sourceMappingURL=glob.module.js.map

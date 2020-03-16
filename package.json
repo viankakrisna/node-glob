@@ -32,6 +32,7 @@
     "path-is-absolute": "^1.0.0"
   },
   "scripts": {
+    "bundle": "microbundle --target=node --external=assert,util,events",
     "prepublish": "npm run benchclean",
     "profclean": "rm -f v8.log profile.txt",
     "test": "tap test/*.js --cov",

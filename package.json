@@ -2,7 +2,7 @@
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
   "name": "glob-microbundled",
   "description": "a little globber",
-  "version": "7.1.10",
+  "version": "7.1.11",
   "repository": {
     "type": "git",
     "url": "git://github.com/isaacs/node-glob.git"

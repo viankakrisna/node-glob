@@ -111,9 +111,6 @@ glob.hasMagic = (pattern, options_) => {
   return false;
 };
 
-glob.Glob = Glob;
-inherits(Glob, EE);
-
 class Glob {
   constructor(pattern, options, cb) {
     if (typeof options === "function") {
@@ -732,3 +729,6 @@ function readdirCb(self, abs, cb) {
     else self._readdirEntries(abs, entries, cb);
   };
 }
+
+glob.Glob = Glob;
+inherits(Glob, EE);
